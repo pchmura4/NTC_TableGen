@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="NTCFrame">
+		<title>NTC Table Generator 2017 Patryk Chmura</title>
+		<size>600,400</size>
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<object class="wxBoxSizer" variable="BoxSizer2" member="no">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<object class="wxBoxSizer" variable="BoxSizer3" member="no">
+								<object class="sizeritem">
+									<object class="wxGridSizer" variable="GridSizer1" member="no">
+										<cols>2</cols>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+												<label>Temperature</label>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+												<label>Resistance</label>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl1" member="yes">
+												<value>-40</value>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="TextCtrl2" member="yes">
+												<value>100950</value>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="TextCtrl3" member="yes">
+												<value>25</value>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxTextCtrl" name="ID_TEXTCTRL4" variable="TextCtrl4" member="yes">
+												<value>3000</value>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxTextCtrl" name="ID_TEXTCTRL5" variable="TextCtrl5" member="yes">
+												<value>100</value>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxTextCtrl" name="ID_TEXTCTRL6" variable="TextCtrl6" member="yes">
+												<value>204</value>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+												<label>Rpull</label>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxTextCtrl" name="ID_TEXTCTRL7" variable="TextCtrl7" member="yes">
+												<value>2700</value>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBoxSizer" variable="BoxSizer6" member="no">
+										<object class="sizeritem">
+											<object class="mpWindow" name="ID_MATHPLOT1" variable="MathPlot1" member="yes">
+												<object class="mpAxis" name="ID_AXIS1" variable="xAxis" member="yes">
+													<mLabel></mLabel>
+													<mAlign>mpALIGN_BORDER_LEFT</mAlign>
+												</object>
+												<object class="mpAxis" name="ID_AXIS2" variable="yAxis" member="yes">
+													<mType>Y-Axis</mType>
+													<mLabel></mLabel>
+													<mAlign>mpALIGN_BORDER_LEFT</mAlign>
+												</object>
+												<object class="mpVector" name="ID_VECTOR1" variable="resVector" member="yes">
+													<mLabelText>Vector</mLabelText>
+													<mXYData>
+														<nums>! Enter X and Y data here, as pairs of numbers separated by commas.</nums>
+														<nums>! For example:</nums>
+														<nums>!   1.5, 2.3</nums>
+														<nums>!   100, 300</nums>
+														<nums>! Blank lines and lines starting with &quot;!&quot; will be ignored.</nums>
+														<nums>! All white-space will be ignored.</nums>
+														<nums></nums>
+													</mXYData>
+												</object>
+												<object class="mpVector" name="ID_VECTOR2" variable="voltVector" member="yes">
+													<mLabelText>Vector</mLabelText>
+													<mXYData>
+														<nums>! Enter X and Y data here, as pairs of numbers separated by commas.</nums>
+														<nums>! For example:</nums>
+														<nums>!   1.5, 2.3</nums>
+														<nums>!   100, 300</nums>
+														<nums>! Blank lines and lines starting with &quot;!&quot; will be ignored.</nums>
+														<nums>! All white-space will be ignored.</nums>
+														<nums></nums>
+													</mXYData>
+												</object>
+											</object>
+											<flag>wxEXPAND</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+							</object>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxBoxSizer" variable="BoxSizer4" member="no">
+								<orient>wxVERTICAL</orient>
+								<object class="sizeritem">
+									<object class="wxGrid" name="ID_GRID1" variable="Grid1" member="yes">
+										<cols>16</cols>
+										<rows>2</rows>
+										<labelrowheight>30</labelrowheight>
+										<labelcolwidth>40</labelcolwidth>
+										<defaultrowsize>30</defaultrowsize>
+										<defaultcolsize>30</defaultcolsize>
+										<collabels>
+											<item>-40</item>
+											<item>-30</item>
+											<item>-20</item>
+											<item>-10</item>
+											<item>0</item>
+											<item>15</item>
+											<item>26</item>
+											<item>37</item>
+											<item>48</item>
+											<item>59</item>
+											<item>70</item>
+											<item>81</item>
+											<item>92</item>
+											<item>103</item>
+											<item>114</item>
+											<item>125</item>
+											<item>135</item>
+										</collabels>
+										<rowlabels>
+											<item>Res</item>
+											<item>Volt</item>
+										</rowlabels>
+										<handler function="OnGrid1Resize" entry="EVT_SIZE" />
+									</object>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxGridSizer" variable="GridSizer2" member="no">
+										<cols>3</cols>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+												<label>A</label>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+												<label>0</label>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticLine" name="ID_STATICLINE1" variable="StaticLine1" member="yes">
+												<size>10,-1</size>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+												<label>B</label>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+												<label>0</label>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticLine" name="ID_STATICLINE2" variable="StaticLine2" member="yes">
+												<size>10,-1</size>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT8" variable="StaticText8" member="yes">
+												<label>C</label>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT9" variable="StaticText9" member="yes">
+												<label>0</label>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+												<label>Generate</label>
+												<handler function="OnButton1Click" entry="EVT_BUTTON" />
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+							</object>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+					</object>
+				</object>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+	</object>
+</wxsmith>
